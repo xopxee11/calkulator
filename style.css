@@ -1,0 +1,55 @@
+@font-face {
+    font-family: TechMono;
+    src: url(ShareTechMono-Regular.ttf) format("opentype");
+}
+
+body {
+    background: linear-gradient(90deg,
+                                rgba(242,242,246,1) 0%,
+                                rgba(207,207,227,1) 30%,
+                                rgba(207,207,227,1) 70%,
+                                rgba(242,242,246,1) 100%);
+    overflow-y: hidden;
+    height: 100%;
+}
+
+#wrapper {
+    max-width: 60%;
+    min-width: 620px;
+    margin: 45vh auto;
+    text-align: center;
+}
+
+form {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#input {
+    min-width: 620px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    background-color: rgba(0,0,0,0);
+    font-family: TechMono, Monospace;
+    font-size: 1.35em;
+    text-transform: uppercase;
+}
+
+#btn {
+	background-color: rgba(207,207,227,1);
+	border-radius:15px;
+	border: 1px solid rgba(190, 190, 190, 1);
+    margin-top: 20px;
+	display:inline-block;
+	cursor:pointer;
+	font-family: TechMono, Monospace;
+	font-size: 1em;
+	padding:12px 16px;
+	text-decoration:none;
+}
+
+#btn:hover {
+	background-color: #C9C9DF;
+}
