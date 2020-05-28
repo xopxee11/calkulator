@@ -1,7 +1,6 @@
-# python3 -m venv calc --> sourse bin/activate --> deactivate
-
 from bottle import route, run, static_file, request, template
 import numexpr as ne
+import os
 
 
 @route('/')
@@ -28,6 +27,7 @@ def calculate():
     return template('index', result=result)
 
 
-if __name__ == '__main__':
+if os.environ.get('APP_LOCATION') == 'heroku':
+    run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
+else:
     run(host='localhost', port=8080)
-# jjhmmmhm
